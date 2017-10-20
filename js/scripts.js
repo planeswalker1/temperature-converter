@@ -12,5 +12,10 @@ function convertTofahrenheit(celsiusTemperature) {
 //Everything below this line is user interface (or front-end) logic:
 $('form#fahrenheit').submit(function(event) {
   event.preventDefault();
-  alert('fahrenheit form submitted');
+  let fahrenheitTemperature = parseFloat($('input#fahrenheitTemp').val());
+  console.log(fahrenheitTemperature);
+  let degreesInCelsius = convertToCelsius(fahrenheitTemperature);
+  console.log(degreesInCelsius);
+  $('p#celsiusOutput span').text(degreesInCelsius);
+  $('p#celsiusOutput').fadeIn();
 });
