@@ -19,3 +19,7 @@ $('form#fahrenheit').submit(function(event) {
   $('p#celsiusOutput span').text(degreesInCelsius);
   $('p#celsiusOutput').fadeIn();
 });
+
+$('input#fahrenheitTemp').focus(function() {
+  $('p#celsiusOutput').fadeOut();
+});
