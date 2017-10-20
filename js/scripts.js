@@ -23,3 +23,8 @@ $('form#fahrenheit').submit(function(event) {
 $('input#fahrenheitTemp').focus(function() {
   $('p#celsiusOutput').fadeOut();
 });
+
+$('form#celsius').submit(function(event) {
+  event.preventDefault();
+  alert('Celsius form submitted');
+});
