@@ -33,3 +33,7 @@ $('form#celsius').submit(function(event) {
   $('p#fahrenheitOutput span').text(degreesInFahrenheit);
   $('p#fahrenheitOutput').slideDown();
 });
+
+$('input#celsiusTemp').focus(function() {
+  $('p#fahrenheitOutput').slideUp();
+});
