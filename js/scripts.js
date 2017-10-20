@@ -26,5 +26,10 @@ $('input#fahrenheitTemp').focus(function() {
 
 $('form#celsius').submit(function(event) {
   event.preventDefault();
-  alert('Celsius form submitted');
+  let celsiusTemperature = parseFloat($('input#celsiusTemp').val());
+  console.log(celsiusTemperature);
+  let degreesInFahrenheit = convertTofahrenheit(celsiusTemperature);
+  console.log(degreesInFahrenheit);
+  $('p#fahrenheitOutput span').text(degreesInFahrenheit);
+  $('p#fahrenheitOutput').slideDown();
 });
