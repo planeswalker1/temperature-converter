@@ -7,3 +7,16 @@ body {
   margin: 0;
   text-align: center;
 }
+
+form {
+  margin-bottom: 10px;
+}
+
+.center-block {
+  float: none;
+}
+
+p {
+  color: red;
+  display: none;
+}
