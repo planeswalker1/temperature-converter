@@ -11,6 +11,20 @@
   <script src="js/scripts.js" defer></script>
 </head>
 <body>
-
+  <div class="container">
+    <h1>Temperature converter</h1>
+    <form id="fahrenheit">
+      <div class="row">
+        <div class="col-md-6 center-block">
+          <div class="form-group">
+            <label for="fahrenheitTemp">Degrees in fahrenheit</label>
+            <input id="fahrenheitTemp" class="form-control" type="text" required>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-danger">Convert to celsius!</button>
+    </form>
+    <p id="celsiusOutput"><span></span> &#8451;</p>
+  </div>
 </body>
 </html>
